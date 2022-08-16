@@ -1,0 +1,52 @@
+body {
+    font-size: 16px;
+    font-family: rubik, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    word-wrap: break-word;
+    background: #FAFAFA;
+    padding: 0;
+    color: #282828
+}
+
+h1 {
+    font-weight: 500;
+    text-align: center;
+    margin: 2%;
+}
+
+#retul {
+    margin-top: 0;
+    text-align: center;
+    font-size: 2em;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 10%;
+}
+
+.item:nth-child(odd) {
+    background-color: #dfdfdf;
+}
+
+.item {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    padding: 10px;
+    width: 40vw;
+}
+
+.description {
+    padding: 30px;
+    background-color: #FAFAFA;
+    line-height: 23px;
+}
