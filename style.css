@@ -19,10 +19,10 @@ h1 {
     margin: 2%;
 }
 
-#retul {
-    margin-top: 0;
-    text-align: center;
-    font-size: 2em;
+#retul-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .container {
