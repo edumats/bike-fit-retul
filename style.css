@@ -1,3 +1,7 @@
+* {
+    margin: 0px;
+}
+
 body {
     font-size: 16px;
     font-family: rubik, sans-serif;
@@ -24,29 +28,43 @@ h1 {
 .container {
     display: grid;
     grid-template-columns: 1fr;
+    row-gap: 20px;
     margin: 10%;
+}
+
+@media only screen and (min-width: 465px) {
+    .container {
+        row-gap: 0px;
+    }
 }
 
 .item:nth-child(odd) {
     background-color: #dfdfdf;
 }
 
+.item:nth-child(even) {
+    background-color: #eaeaea;
+}
+
 .item {
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    width: 100%;
 }
 
 .title {
-    display: flex;
     justify-content: center;
     align-items: center;
     font-weight: 500;
     padding: 10px;
-    width: 40vw;
 }
 
-.description {
+.description, .description-odd {
     padding: 30px;
-    background-color: #FAFAFA;
     line-height: 23px;
+    background-color: #e9e9e9;
+}
+
+.description-odd {
+    background-color: #f4f4f4;
 }
